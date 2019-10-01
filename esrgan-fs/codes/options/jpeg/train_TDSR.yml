@@ -1,5 +1,5 @@
 #### general settings
-name: DF2K_gaussian_TDSR_model
+name: DF2K_jpeg_TDSR
 use_tb_logger: true
 model: srgan
 distortion: sr
@@ -11,8 +11,8 @@ datasets:
   train:
     name: DF2K_train 
     mode: LQGT    
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/generated/gaussian/train_tdsr/HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/generated/gaussian/train_tdsr/LR
+    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/generated/jpeg/train_tdsr/HR
+    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/generated/jpeg/train_tdsr/LR
 
     use_shuffle: true
     n_workers: 6  # per GPU
@@ -25,7 +25,7 @@ datasets:
     name: DIV2K_val
     mode: LQGT
     dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/valid_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/gaussian/valid_LR
+    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/jpeg/valid_LR
     
 #### network structures
 network_G:

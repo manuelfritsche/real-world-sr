@@ -1,5 +1,5 @@
 #### general settings
-name: DF2K_filters
+name: AIM2019_SDSR
 use_tb_logger: true
 model: srgan
 distortion: sr
@@ -9,10 +9,10 @@ gpu_ids: [4]
 #### datasets
 datasets:
   train:
-    name: DF2K_train 
+    name: train 
     mode: LQGT    
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/train_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/clean/train_LR
+    dataroot_GT: ../../datasets/AIM2019/generated/sdsr/HR
+    dataroot_LQ: ../../datasets/AIM2019/generated/sdsr/LR
 
     use_shuffle: true
     n_workers: 6  # per GPU
@@ -22,10 +22,10 @@ datasets:
     use_rot: true
     color: RGB
   val:
-    name: DIV2K_val
+    name: val
     mode: LQGT
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/valid_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/clean/valid_LR
+    dataroot_GT: ../../datasets/AIM2019/ValidationDummyHr
+    dataroot_LQ: ../../datasets/AIM2019/ValidationSource
     
 #### network structures
 network_G:
@@ -41,9 +41,9 @@ network_D:
 
 #### path
 path:
-  pretrain_model_G: ../experiments/pretrained_models/RRDB_PSNR_x4.pth
+  pretrain_model_G: # ../experiments/pretrained_models/RRDB_ESRGAN_x4.pth
   strict_load: true
-  resume_state: ~ # ../experiments/DF2K_gaussian_bicubic/training_state/40000.state #~
+  resume_state: ../experiments/AIM2019_SDSR/training_state/35000.state
 
 #### training settings: learning rate scheme, loss
 train:
@@ -57,14 +57,14 @@ train:
   beta2_D: 0.999
   lr_scheme: MultiStepLR
 
-  niter: 60000
+  niter: 60001
   warmup_iter: -1  # no warm up
   lr_steps: [5000, 10000, 20000, 30000]
   lr_gamma: 0.5
 
   use_filters: True
   pixel_criterion: l1
-  pixel_weight: !!float 1 # 1e-2
+  pixel_weight: !!float 1e-2  # 1
   feature_criterion: l1
   feature_weight: 1
   gan_type: ragan  # gan | ragan

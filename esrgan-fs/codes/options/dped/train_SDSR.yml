@@ -1,5 +1,5 @@
 #### general settings
-name: DF2K_original_full
+name: DPED_SDSR
 use_tb_logger: true
 model: srgan
 distortion: sr
@@ -9,10 +9,10 @@ gpu_ids: [4]
 #### datasets
 datasets:
   train:
-    name: DF2K_train 
+    name: DPED_train 
     mode: LQGT    
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/train_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/clean/train_LR
+    dataroot_GT: ../../datasets/DPED/generated/clean/train_sdsr/HR
+    dataroot_LQ: ../../datasets/DPED/generated/clean/train_sdsr/LR
 
     use_shuffle: true
     n_workers: 6  # per GPU
@@ -22,10 +22,10 @@ datasets:
     use_rot: true
     color: RGB
   val:
-    name: DIV2K_val
+    name: DPED_test
     mode: LQGT
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/valid_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/clean/valid_LR
+    dataroot_GT: ../../datasets/DPED/test/iphone
+    dataroot_LQ: ../../datasets/DPED/generated/clean/valid_LR_clean
     
 #### network structures
 network_G:
@@ -41,9 +41,9 @@ network_D:
 
 #### path
 path:
-  pretrain_model_G: # ../experiments/pretrained_models/RRDB_PSNR_x4.pth
+  pretrain_model_G: ../experiments/pretrained_models/RRDB_ESRGAN_x4.pth
   strict_load: true
-  resume_state: ../experiments/DF2K_original_full/training_state/latest.state #~
+  resume_state: ../experiments/DPED_SDSR_model/training_state/30000.state
 
 #### training settings: learning rate scheme, loss
 train:
@@ -57,9 +57,9 @@ train:
   beta2_D: 0.999
   lr_scheme: MultiStepLR
 
-  niter: 400000
+  niter: 51000
   warmup_iter: -1  # no warm up
-  lr_steps: [50000, 100000, 200000, 300000]
+  lr_steps: [5000, 10000, 20000, 30000]
   lr_gamma: 0.5
 
   use_filters: False
