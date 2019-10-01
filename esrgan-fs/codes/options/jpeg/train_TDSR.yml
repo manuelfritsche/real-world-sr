@@ -11,8 +11,8 @@ datasets:
   train:
     name: DF2K_train 
     mode: LQGT    
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/generated/jpeg/train_tdsr/HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/generated/jpeg/train_tdsr/LR
+    dataroot_GT: ../../datasets/DF2K/generated/jpeg/train_tdsr/HR
+    dataroot_LQ: ../../datasets/DF2K/generated/jpeg/train_tdsr/LR
 
     use_shuffle: true
     n_workers: 6  # per GPU
@@ -24,8 +24,8 @@ datasets:
   val:
     name: DIV2K_val
     mode: LQGT
-    dataroot_GT: /home/manuelf/scratch/datasets/DF2K/clean/valid_HR
-    dataroot_LQ: /home/manuelf/scratch/datasets/DF2K/jpeg/valid_LR
+    dataroot_GT: ../../datasets/DF2K/clean/valid_HR
+    dataroot_LQ: ../../datasets/DF2K/jpeg/valid_LR
     
 #### network structures
 network_G:
