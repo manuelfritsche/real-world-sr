@@ -20,7 +20,7 @@ Please see [wiki](https://github.com/xinntao/BasicSR/wiki/Training-and-Testing) 
 ## Pre-Trained Models
 | |[ESRGAN-FS](https://github.com/ManuelFritsche/real-world-sr/tree/master/esrgan-fs)|
 |---|:---:|
-|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian_TDSR.tar)|
-|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg_TDSR.tar)|
-|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_DPED_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_DPED_TDSR.tar)|
-|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_AIM2019_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_AIM2019_TDSR.tar)|
+|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_gaussian_SDSR.pth)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_gaussian_TDSR.pth)|
+|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_jpeg_SDSR.pth)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_jpeg_TDSR.pth)|
+|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DPED_SDSR.pth)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DPED_TDSR.pth)|
+|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/AIM2019_SDSR.pth)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/AIM2019_TDSR.pth)|
