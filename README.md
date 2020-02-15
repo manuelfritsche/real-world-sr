@@ -9,10 +9,10 @@ To address this problem, we propose DSGAN to introduce natural image characteris
 ### Pre-trained Models
 | |[DSGAN](https://github.com/ManuelFritsche/real-world-sr/tree/master/dsgan)|[ESRGAN-FS](https://github.com/ManuelFritsche/real-world-sr/tree/master/esrgan-fs)|
 |---|:---:|:---:|
-|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian_TDSR.tar)|
-|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg_TDSR.tar)|
-|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DPED.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_DPED_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_DPED_TDSR.tar)|
-|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/AIM2019.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_AIM2019_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_AIM2019_TDSR.tar)|
+|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_gaussian.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_gaussian_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_gaussian_TDSR.tar)|
+|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_jpeg.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_jpeg_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_jpeg_TDSR.tar)|
+|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DPED.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_DPED_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_DPED_TDSR.tar)|
+|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/AIM2019.tar)|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_AIM2019_SDSR.tar)/[TDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/ESRGAN-FS/DF2K_AIM2019_TDSR.tar)|
 
 ### BibTeX
     @inproceedings{fritsche2019frequency,
