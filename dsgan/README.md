@@ -54,7 +54,7 @@ Use `python create_dataset.py -h` to view optional arguments.
 
 ### Pre-Trained Models
 We provide the pre-trained models only for the SDSR case. However, for the TDSR case we used the same models to introduce the artificial corruptions.
-| |[DSGAN](https://github.com/ManuelFritsche/real-world-sr/tree/master/dsgan)|
+| |[DSGAN](https://github.com/ManuelFritsche/real-world-sr/dsgan)|
 |---|:---:|
 |DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_gaussian.tar)|
 |DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_jpeg.tar)|
