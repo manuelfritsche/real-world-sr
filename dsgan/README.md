@@ -56,10 +56,10 @@ Use `python create_dataset.py -h` to view optional arguments.
 We provide the pre-trained models only for the SDSR case. However, for the TDSR case we used the same models to introduce the artificial corruptions.
 | |[DSGAN](https://github.com/ManuelFritsche/real-world-sr/tree/master/dsgan)|
 |---|:---:|
-|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_gaussian.tar)|
-|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DF2K_jpeg.tar)|
-|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/DPED.tar)|
-|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/AIM2019.tar)|
+|DF2K Gaussian|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_gaussian.tar)|
+|DF2K JPEG|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DF2K_jpeg.tar)|
+|DPED|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/DPED.tar)|
+|AIM 2019|[SDSR](https://data.vision.ee.ethz.ch/timofter/FrequencySeparationRWSR/checkpoints/DSGAN/AIM2019.tar)|
 
 ## Setup for Reproducing the Results
 ### Datasets 
