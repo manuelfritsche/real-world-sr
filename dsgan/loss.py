@@ -5,7 +5,7 @@ from torchvision.models.vgg import vgg16, vgg19
 from model import FilterLow
 import sys
 sys.path.insert(0, './PerceptualSimilarity')
-import PerceptualSimilarity as ps
+#import PerceptualSimilarity as ps
 from PerceptualSimilarity import models
 
 
@@ -88,7 +88,8 @@ class GeneratorLoss(nn.Module):
 class PerceptualLossLPIPS(nn.Module):
     def __init__(self):
         super(PerceptualLossLPIPS, self).__init__()
-        self.loss_network = ps.PerceptualLoss(use_gpu=torch.cuda.is_available())
+        #self.loss_network = ps.PerceptualLoss(use_gpu=torch.cuda.is_available())
+        self.loss_network = models.PerceptualLoss(use_gpu=torch.cuda.is_available())
 
     def forward(self, x, y):
         return self.loss_network.forward(x, y, normalize=True).mean()
