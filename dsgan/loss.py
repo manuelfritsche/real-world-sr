@@ -6,6 +6,7 @@ from model import FilterLow
 import sys
 sys.path.insert(0, './PerceptualSimilarity')
 import PerceptualSimilarity as ps
+from PerceptualSimilarity import models
 
 
 def generator_loss(labels, wasserstein=False, weights=None):
